@@ -1,0 +1,353 @@
+        * {
+            font-family: Comic Sans MS, Comic Sans, Brush Script MT, Times New Roman, sans-serif;
+        }
+
+        body {
+            background: url(../Image/BackGround.webp);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #0d4363;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100vh;
+            margin: 0;
+            overflow-x: hidden;
+
+        }
+        .menu {
+             position: fixed;
+             display: flex;
+             justify-content: space-around;
+             align-items: center;
+             height: 40px;
+             top: 10px;
+             width: 90%;
+             min-width: 90%;
+             left: 5%;
+             border-radius: 20px;
+             background-color: rgba(255, 255, 255, 0.38);
+             border: 2px solid rgb(46, 151, 171);
+             box-sizing: border-box;
+             z-index: 1;
+        }
+
+         .menu__element{
+            background-color: rgb(46, 151, 171);
+            text-align: center;
+            width: 80px;
+            border: 2px solid rgb(13, 82, 118);
+            border-radius: 10px;
+            cursor: pointer;
+            decoration: none;
+            color: #fff;
+
+        }
+
+        .menu__element:hover {
+            opacity: 0.7;
+            text-decoration:none;
+        }
+         }
+
+         .UFO {
+         }
+
+        .main {
+            display: flex;
+            margin: 400px 20%;
+            flex: 1 1 auto;
+            min-width: 100px;
+            background-color: rgba(255, 255, 255, 0.38);
+            border: 5px solid rgb(46, 151, 171);
+            border-radius: 10px;
+        }
+
+        .left-column {
+            display: block;
+            box-sizing: border-box;
+            width: 75%;
+            min-width: 75px;
+            height: auto;
+        }
+
+        .title {
+            padding: 20px;
+            height: auto;
+            box-sizing: border-box;
+            text-align: center;
+            border-bottom: 2px solid rgb(46, 151, 171);
+        }
+
+        .title__icon {
+            float: right;
+            box-sizing: border-box;
+            border: 3px solid #000;
+            min-width: 20px;
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 50px rgba(46, 151, 171, 0.5)
+        }
+
+        .content {
+        padding: 0 20px;
+        }
+
+        .content__video {
+            width: 400px;
+            min-width: 40px;
+            height: 300px;
+            min-height: 30px;
+            border-radius: 10px;
+            border: 2px solid aquamarine;
+        }
+
+        .more {
+        }
+
+        .center {
+            border-top: 2px solid rgb(46, 151, 171);
+            align-items: center;
+            text-align: center;
+        }
+
+        .right-column {
+            box-sizing: border-box;
+            width: 25%;
+            min-width: 25px;
+            height: auto;
+            border-left: 5px solid rgb(46, 151, 171);
+            text-align: center;
+
+        }
+
+        .search{
+        }
+
+        .search__input {
+            width: 80%;
+            max-width: 80%;
+            border-color: #2589a2;
+            background-color: rgb(46, 151, 171);
+            font-style: italic;
+            color: yellow;
+            outline-color: aquamarine;
+            margin-bottom: 10px;
+        }
+        ::-webkit-input-placeholder { /* WebKit browsers */
+           color:    aquamarine;
+        }
+        :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+           color:    aquamarine;
+        }
+        ::-moz-placeholder { /* Mozilla Firefox 19+ */
+           color:    aquamarine;
+        }
+        :-ms-input-placeholder { /* Internet Explorer 10+ */
+           color:    aquamarine;
+        }
+
+       .search__button {
+            background-color: rgb(46, 151, 171);
+            text-align: center;
+            width: 100px;
+            padding: 2px;
+            border: 2px solid rgb(13, 82, 118);
+            border-radius: 10px;
+            cursor: pointer;
+            decoration: none;
+            color: #fff;
+
+        }
+
+       .search__button:hover {
+            opacity: 0.8;
+       }
+
+        .music {
+        padding: 20px;
+        }
+
+        .music-content {
+            width: 90%;
+            height: 80px;
+            border-radius: 10px;
+            border: 2px solid rgb(46, 151, 171);
+        }
+
+        .footer {
+            display: flex;
+            flex: 0 1 auto;
+            justify-content: space-around;
+            width: 100%;
+            box-sizing: content-box;
+            background-color: rgba(255, 255, 255, 0.38);
+            border-top: 5px solid rgb(46, 151, 171);
+        }
+
+        .footer1 {
+        }
+
+        .footer2 {
+        }
+
+        .footer3 {
+        }
+        .fire-gif {
+        margin-top: -82px;
+        margin-bottom: none;
+        padding: none;
+        position: absolute;
+        width: 50px;
+        animation: fire 30s linear 0s infinite alternate-reverse;
+        }
+
+        .fire-gif>img {
+            width: 50px;
+            pointer-events: none;
+        }
+        .fireGif:hover {
+        animation-play-state: paused;
+        }
+        @keyframes fire {
+        0% {
+        bottom: -20;
+        left: 0;
+            }
+        25%{
+        }
+        50%{
+        bottom: -20;
+        left: calc(100% - 50px);
+        }
+        75%{
+        }
+        100%{
+        top: 200;
+        left: 0;
+        }
+        }
+
+       a {
+            text-decoration: none;
+            color: #000000;
+            }
+       a:hover {
+            text-decoration: underline;
+            color: aquamarine;
+            opacity: 0.8;
+       }
+       a:active {
+            color: blue;
+       }
+
+       p {
+            font-size: 1.2em;
+       }
+
+       .text-rainbow {
+            animation: rainbow 10s infinite;
+       }
+
+       @keyframes rainbow {
+            0% {
+                color: pink;
+            }
+            10% {
+            color: red
+            }
+            20% {
+                color: orange;
+            }
+
+            30% {
+                color: gold;
+            }
+            40% {
+                color: yellow;
+            }
+            50% {
+            color: lime;
+            }
+            60% {
+                color: green;
+            }
+
+            70% {
+                color: cyan;
+            }
+            80% {
+            color: blue;
+            }
+            90% {
+                color: indigo;
+            }
+
+            100% {
+                color: violet;
+            }
+       }
+
+       @media (max-device-width: 1200px) {
+            .main {
+               margin-left: 10%;
+               margin-right: 10%;
+               margin-top: 10vw;
+               min-width: 80vw;
+                }
+
+            .menu__element {
+                width: 70px;
+                height: 22px;
+            }
+
+
+       }
+        @media print {
+                * {
+                    font-family: georgia, times, serif, sans-serif;
+                }
+                 .menu {
+                    display: none;
+                 }
+                 .Comet {
+                 display: none;
+                 }
+                 .UFO {
+                 display: none;
+                 }
+                 .main {
+                    margin-top: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 0;
+                    width: 100vw;
+                    border: 5px solid #000;
+
+                 }
+                 .left-column {
+                 width: 100%;
+                 }
+                 .title {
+                 padding: 40px 20px;
+                 }
+                 .title__icon {
+                 margin-left: 20px;
+                 }
+                 .right-column {
+                 display: none;
+                 }
+                 .music {
+                 display: none;
+                 }
+                 .footer {
+                    display: none;
+                 }
+                 @page {
+                    size: A4;
+                    margin: 0;
+                    }
+
+                 }

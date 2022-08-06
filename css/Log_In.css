@@ -1,0 +1,47 @@
+        body {
+            background: url(../Image/BackGround.webp);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #0d4363;
+            margin: 0;
+        }
+
+        /*Стиль тела сайта*/
+
+        .LogoCenter {
+            text-align: center;
+            position: absolute;
+            line-height: 40px;
+            top: 40%;
+            height: 400px;
+            width: 100%;
+        }
+
+        /*Позиционирование меню блока авторизации по центру */
+
+        .borderLogInput {
+            position: relative;
+            padding: 3px;
+            border: 2px solid rgb(13, 82, 118);
+            background-color: rgba(255, 255, 255, 0.38);
+            border-radius: 15px;
+        }
+
+        /* Поля ввода данных Блока Авторизации */
+
+        .borderLogButton {
+            position: relative;
+            justify-content: space-around;
+            padding: 4px;
+            border: 4px solid rgb(13, 82, 118);
+            background-color: rgb(46, 151, 171);;
+            border-radius: 15px;
+        }
+        .padding {
+        padding: 30px;
+        }
+
+
+
