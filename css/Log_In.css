@@ -36,12 +36,10 @@
             justify-content: space-around;
             padding: 4px;
             border: 4px solid rgb(13, 82, 118);
-            background-color: rgb(46, 151, 171);;
+            background-color: rgb(46, 151, 171);
             border-radius: 15px;
         }
+
         .padding {
-        padding: 30px;
+            padding: 30px;
         }
-
-
-
