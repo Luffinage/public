@@ -26,14 +26,46 @@
     <header>
         <nav class="menu">
             <div class="menu__logo">
-                <a href="index.html"><img src="Image/logo_mini.png" alt="Luffinage.tk"></a>
+                <a href="index.html"><img class="menu__logo" src="Image/logo_mini.png" alt="Luffinage.tk"></a>
             </div>
-            <div class="menu__nav">
-            <a href="alternative.html" class="menu__element">Alternative</a>
-            <a href="Log_In.html" class="menu__element">Log In</a>
-        </div>
+
+            <ul class="menu__nav menu__element">
+                <li class="menu__link"> <a>Languages</a>
+                    <ul class="menu__sub-nav">
+                        <li class="menu__sub-link"><a href="HTML.html">HTML</a></li>
+                        <li class="menu__sub-link"><a href="CSS.html">CSS</a></li>
+                        <li class="menu__sub-link"><a href="Java_Script.html">Java Script</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="menu__nav menu__element">
+                <li class="menu__link"> <a>More</a>
+                    <ul class="menu__sub-nav">
+                        <li class="menu__sub-link "><a href="alternative.html">Alternative</a></li>
+                        <li class="menu__sub-link "><a href="https://codepen.io/pen/" target="_blank">Test your code</a>
+                        </li>
+                        <li class="menu__sub-link"><a href="10AnimationText.html">10 cool animated text!</a></li>
+                        <li class="menu__sub-link"><a href="animationCatsCSS.html">Animation Cats with CSS</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="menu__search-log">
+                <div class="menu__form">
+                    <form action="https://google.com/search" target="_blank">
+                        <input type="search" name="text" class="search__input" id="text-search"
+                            placeholder="How can i read..."><label for="text-search"></label>
+                        <input type="submit" id="search" class="search__button" value="Search">
+                        <label for="search"></label>
+                    </form>
+                </div>
+                <div class="menu__element"><a href="Log_In.html">Log In</a></div>
+            </div>
+
         </nav>
     </header>
+
 
 
 
@@ -42,18 +74,15 @@
     </div>
 
     <main class="main">
-
-        <div class="main__left-column">
-
+        <div class="container">
             <div class="main__title">
-                <div class="mein__icon">
+                <div class="mein__image">
                     <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
-                        <img class="main__icon-item" src="Image/Icon_HTML5.png" alt="HTML">
+                        <img src="Image/Icon_HTML5.png" alt="HTML">
                     </a>
                 </div>
                 <div class="main__body">
                     <h1>HTML: HyperText Markup Language</h1>
-
                 </div>
             </div>
             <div class="main__content">
@@ -64,55 +93,39 @@
                 <iframe class="content__video" src="https://www.youtube.com/embed/DOEtVdkKwcU" allowfullscreen></iframe>
             </div>
         </div>
-
-        <div class="main__right-column">
-            <div class="main__item search">
-                <h4>What are you looking for?</h4>
-                <form action="https://google.com/search" target="_blank">
-                    <input type="search" name="text" class="search__input" id="textSearch"
-                        placeholder="How can i read..."><label for="textSearch"></label>
-                    <input type="submit" id="search" class="search__button" value="Search">
-                    <label for="search"></label>
-                </form>
-            </div>
-            <div class="main__item">
-                <ul> Recommend reading:
-                    <li><a href="HTML.html" style="color: #ffa100">HTML</a></li>
-                    <li><a href="CSS.html" style="color: dodgerblue">CSS</a></li>
-                    <li><a href="Java_Script.html" style="color: #ff0">Java Script</a></li>
-                    <li><a href="10AnimationText.html">10 cool animated text!</a></li>
-                    <li><a href="animationCatsCSS.html">Animation Cats with CSS.</a></li>
-                </ul>
-            </div>
-            <div class="main__item">
-                <ul> For reading:
-                    <li><a href="https://developer.mozilla.org/ru/" target="_blank">MDN</a></li>
-                    <li><a href="https://htmlbook.ru/" target="_blank">HTML Book</a></li>
-                    <li><a href="https://html5book.ru/" target="_blank">HTML 5 Book</a></li>
-                    <li>
-                        <a href="https://guruweba.com/" target="_blank">Guru Weba</a>
-                    </li>
-                    <li><a href="https://ruseller.com/" target="_blank">Ruseller</a></li>
-                </ul>
-            </div>
-            <div class="main__item">
-                <ul>For checked:
-                    <li><a href="https://validator.w3.org/#validate_by_upload+with_options" target="_blank">W3C</a></li>
-                    <li><a href="https://caniuse.com/" target="_blank">CanIUse</a></li>
-                </ul>
-            </div>
-            <div class="main__item">
-                <ul> For creating:
-                    <li><a href="https://codepen.io/" target="_blank">Codepen</a></li>
-                    <li><a href="https://replit.com/languages/java10" target="_blank">Replit</a></li>
-                    <li><a href="https://onecompiler.com/" target="_blank">OneCompiler</a></li>
-                </ul>
-            </div>
-        </div>
-
-
     </main>
 
+    <aside class="aside">
+        <div class="container">
+            <nav>
+                <div class="aside__item">
+                    <ul> For reading:
+                        <li><a href="https://developer.mozilla.org/ru/" target="_blank">MDN</a></li>
+                        <li><a href="https://htmlbook.ru/" target="_blank">HTML Book</a></li>
+                        <li><a href="https://html5book.ru/" target="_blank">HTML 5 Book</a></li>
+                        <li>
+                            <a href="https://guruweba.com/" target="_blank">Guru Weba</a>
+                        </li>
+                        <li><a href="https://ruseller.com/" target="_blank">Ruseller</a></li>
+                    </ul>
+                </div>
+                <div class="aside__item">
+                    <ul>For checked:
+                        <li><a href="https://validator.w3.org/#validate_by_upload+with_options" target="_blank">W3C</a>
+                        </li>
+                        <li><a href="https://caniuse.com/" target="_blank">CanIUse</a></li>
+                    </ul>
+                </div>
+                <div class="aside__item">
+                    <ul> For creating:
+                        <li><a href="https://codepen.io/" target="_blank">Codepen</a></li>
+                        <li><a href="https://replit.com/languages/java10" target="_blank">Replit</a></li>
+                        <li><a href="https://onecompiler.com/" target="_blank">OneCompiler</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </aside>
 
     <footer class="footer">
         <div class="fire-gif">

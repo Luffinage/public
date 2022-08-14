@@ -27,12 +27,43 @@
     <header>
         <nav class="menu">
             <div class="menu__logo">
-                <a href="index.html"><img src="Image/logo_mini.png" alt="Luffinage.tk"></a>
+                <a href="index.html"><img class="menu__logo" src="Image/logo_mini.png" alt="Luffinage.tk"></a>
             </div>
-            <div class="menu__nav">
-            <a href="alternative.html" class="menu__element">Alternative</a>
-            <a href="Log_In.html" class="menu__element">Log In</a>
-        </div>
+
+            <ul class="menu__nav menu__element">
+                <li class="menu__link"> <a>Languages</a>
+                    <ul class="menu__sub-nav">
+                        <li class="menu__sub-link"><a href="HTML.html">HTML</a></li>
+                        <li class="menu__sub-link"><a href="CSS.html">CSS</a></li>
+                        <li class="menu__sub-link"><a href="Java_Script.html">Java Script</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="menu__nav menu__element">
+                <li class="menu__link"> <a>More</a>
+                    <ul class="menu__sub-nav">
+                        <li class="menu__sub-link "><a href="alternative.html">Alternative</a></li>
+                        <li class="menu__sub-link "><a href="https://codepen.io/pen/" target="_blank">Test your code</a>
+                        </li>
+                        <li class="menu__sub-link"><a href="10AnimationText.html">10 cool animated text!</a></li>
+                        <li class="menu__sub-link"><a href="animationCatsCSS.html">Animation Cats with CSS</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <div class="menu__search-log">
+                <div class="menu__form">
+                    <form action="https://google.com/search" target="_blank">
+                        <input type="search" name="text" class="search__input" id="text-search"
+                            placeholder="How can i read..."><label for="text-search"></label>
+                        <input type="submit" id="search" class="search__button" value="Search">
+                        <label for="search"></label>
+                    </form>
+                </div>
+                <div class="menu__element"><a href="Log_In.html">Log In</a></div>
+            </div>
+
         </nav>
     </header>
 
@@ -42,7 +73,7 @@
         <img src="Image/Comet.png" alt="comet">
     </div>
 
-    =<main class="main">
+    <div class="container">
         <div>
             <div class="main__title">
                 <div class="topLeft">
@@ -193,7 +224,7 @@
                 </p2>
             </div>
         </div>
-    </main>
+    </div>
 
 
     <footer class="footer">
