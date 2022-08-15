@@ -401,12 +401,15 @@
             }
         }
 
-        @media (max-device-width: 1500px) {
+        /* @media (max-device-width: 1500px) {
             .main {
                 margin: 200px 5;
             }
-        }
-            @media (max-device-width: 1000px) {
+        } */
+            @media (max-device-width: 1500px) {
+                body {
+                    font-size: 30px;
+                }
                 .main {
                     margin-left: 10%;
                     margin-right: 10%;
