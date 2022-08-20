@@ -30,38 +30,42 @@
                 <a href="index.html"><img src="Image/logo_400x80.png" alt="Luffinage.tk"></a>
             </div>
 
-            <ul class="menu__nav menu__element list-1">
-                <li class="menu__link"> <a>Languages</a>
-                    <ul class="menu__sub-nav">
-                        <li class="menu__sub-link"><a href="HTML.html">HTML</a></li>
-                        <li class="menu__sub-link"><a href="CSS.html">CSS</a></li>
-                        <li class="menu__sub-link"><a href="Java_Script.html">Java Script</a></li>
-                    </ul>
-                </li>
-            </ul>
+            <ul class="menu__nav menu__element">
+                <li class="menu__nav-search">
+                    <div class="menu__search">
+                        <form class="search" action="https://google.com/search" target="_blank">
+                            <input type="search" name="text" class="search__input" id="text-search"><label
+                                for="text-search"> <img src="Image/icon_search_32x32.png" alt=""></label>
 
-            <ul class="menu__nav menu__element list-2">
-                <li class="menu__link"> <a>More</a>
-                    <ul class="menu__sub-nav">
-                        <li class="menu__sub-link "><a href="alternative.html">Alternative</a></li>
-                        <li class="menu__sub-link "><a href="https://codepen.io/pen/" target="_blank">Test your code</a>
+                        </form>
+                    </div>
+                </li>
+                <li class="menu__nav-list"> <a class="menu__element" href="#">Menu</a>
+                    <ul class="menu__nav nav2 menu__element">
+                        <li class="menu__link"><a>Interesting</a><span class="arrow"></span>
+                            <ul class="menu__sub-nav nav3">
+                                <li class="menu__sub-link "><a href="alternative.html">Alternative</a></li>
+                                <li class="menu__sub-link "><a href="https://codepen.io/pen/" target="_blank">Test your
+                                        code</a>
+                                </li>
+                                <li class="menu__sub-link"><a href="10AnimationText.html">10 cool animated text!</a>
+                                </li>
+                                <li class="menu__sub-link"><a href="animationCatsCSS.html">Animation Cats with CSS</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="menu__sub-link"><a href="10AnimationText.html">10 cool animated text!</a></li>
-                        <li class="menu__sub-link"><a href="animationCatsCSS.html">Animation Cats with CSS</a></li>
+                        <li class="menu__link"> <a>Languages</a><span class="arrow"></span>
+                            <ul class="menu__sub-nav nav3">
+                                <li class="menu__sub-link"><a href="HTML.html">HTML</a></li>
+                                <li class="menu__sub-link"><a href="CSS.html">CSS</a></li>
+                                <li class="menu__sub-link"><a href="Java_Script.html">Java Script</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu__link menu__login menu__element"><a href="Log_In.html">Login</a></li>
                     </ul>
                 </li>
+
             </ul>
-
-            <div class="menu__form">
-                <form action="https://google.com/search" target="_blank">
-                    <input type="search" name="text" class="search__input" id="text-search"
-                        placeholder="How can i read..."><label for="text-search"></label>
-                    <input type="submit" id="search" class="search__button" value="Search">
-                    <label for="search"></label>
-                </form>
-            </div>
-
-            <div class="menu__log menu__element"><a href="Log_In.html">Log In</a></div>
         </nav>
     </header>
 

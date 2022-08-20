@@ -56,12 +56,12 @@
                 <form action="https://google.com/search" target="_blank">
                     <input type="search" name="text" class="search__input" id="text-search"
                         placeholder="How can i read..."><label for="text-search"></label>
-                    <input type="submit" id="search" class="search__button" value="Search">
+                    <input type="submit" id="search" class="search__btn" value="Search">
                     <label for="search"></label>
                 </form>
             </div>
 
-            <div class="menu__log menu__element"><a href="Log_In.html">Log In</a></div>
+            <div class="menu__login menu__element"><a href="Log_In.html">Log In</a></div>
         </nav>
     </header>
 
@@ -97,34 +97,71 @@
                 </p>
             </div>
 
-            <div class="main__content">
-                <h2>Animation and Transition</h2>
-                <p><a href="https://html5book.ru/css3-animation/" target="_blank">Animation</a></p>
-                <p><iframe class="content__video" src="https://www.youtube.com/embed/GKgOOuTL0po"
+
+            <div class="spoiler">
+                <input class="spoiler__checkbox" type="checkbox" id="checkbox__switch-1"></input>
+                <label class="spoiler__title" for="checkbox__switch-1">
+                    <h2>Animation and Transition</h2>
+                </label>
+                <div class="spoiler__content">
+                    <p><a href="https://html5book.ru/css3-animation/" target="_blank">Animation</a></p>
+                    <p><iframe class="content__video" src="https://www.youtube.com/embed/GKgOOuTL0po"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></p>
+
+                    <p><a href="https://developer.mozilla.org/ru/docs/Web/CSS/transition" target="_blank">Transition
+                            MDN</a>
+                    </p>
+                    <p><a href="https://fls.guru/csstransition.html">Transition FLS</a></p>
+                    <p><iframe class="content__video" src="https://www.youtube.com/embed/yZFg3cuq_LU"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></p>
+                </div>
+            </div>
+
+            <div class="spoiler">
+                <input class="spoiler__checkbox" type="checkbox" id="checkbox__switch-2"></input>
+                <label class="spoiler__title" for="checkbox__switch-2">
+                    <h2>Position</h2>
+                </label>
+                <div class="spoiler__content">
+                    <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position">Reading</a></p>
+                    <p><iframe class="content__video" src="https://www.youtube.com/embed/mpykT40_VBc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe></p>
+                </div>
+            </div>
+            <div class="spoiler">
+                <input class="spoiler__checkbox" type="checkbox" id="checkbox__switch-3"></input>
+                <label class="spoiler__title" for="checkbox__switch-3">
+                    <h2>
+                        <h2>Float, Flex, Grid</h2>
+                    </h2>
+                </label>
+                <div class="spoiler__content">
+                    <iframe class="content__video" src="https://www.youtube.com/embed/azQRYYdKt8I"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></p>
-
-                <p><a href="https://developer.mozilla.org/ru/docs/Web/CSS/transition" target="_blank">Transition MDN</a>
-                </p>
-                <p><a href="https://fls.guru/csstransition.html">Transition FLS</a></p>
-                <p><iframe class="content__video" src="https://www.youtube.com/embed/yZFg3cuq_LU"
-                        title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe></p>
+                        allowfullscreen></iframe>
+                    <h3>Float</h3>
+                    <p><a href="https://developer.mozilla.org/ru/docs/Web/CSS/clear">Clear properties</a></p>
+                    <h3>FlexBox</h3>
+                    <p><a href="https://flexboxfroggy.com/">Flex-game</a></p>
+                    <p><a href="https://www.youtube.com/playlist?list=PLM6XATa8CAG5mPV60dMmjMRrHVW4LmV2x"
+                            target="_blank">Video
+                            "Flex box"</a></p>
+                    <p><a href="https://tpverstak.ru/flex-cheatsheet/"> FLexBox properties</a></p>
+                    <p><a href="https://codepen.io/luffinage/pen/RwQRXrR" target="_blank">Test "Flex box"</a></p>
+                    <h3>Grid</h3>
+                    <p><a href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout"> Gid Mozilla</a></p>
+                    <p><a href="https://tpverstak.ru/grid/">Grid properties</a></p>
+                    <p><a href="http://cssgridgarden.com/#ru"> Grid game</a></p>
+                </div>
             </div>
-
-            <div class="main__content">
-                <h2>Position</h2>
-                <p>Video <a href="https://youtu.be/mpykT40_VBc">position</a></p>
-            </div>
-            <div class="main__content">
-                <h2>Flex</h2>
-                <p><a href="https://www.youtube.com/playlist?list=PLM6XATa8CAG5mPV60dMmjMRrHVW4LmV2x"
-                        target="_blank">Video
-                        "Flex box"</a></p>
-                <p><a href="https://codepen.io/luffinage/pen/RwQRXrR" target="_blank">Test "Flex box"</a></p>
-            </div>
+        </div>
         </div>
     </main>
 
