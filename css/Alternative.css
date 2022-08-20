@@ -260,7 +260,7 @@ img {
 }
 
 
-.search__button {
+.search__btn {
     background-color: aqua;
     text-align: center;
     width: 100px;
@@ -272,7 +272,7 @@ img {
 
 }
 
-.search__button:hover {
+.search__btn:hover {
     opacity: 0.8;
 }
 
@@ -450,7 +450,7 @@ img {
         font-size: 35px;
     }
 
-    .search__button {
+    .search__btn {
         width: 200px;
         font-size: 35px;
     }
@@ -530,7 +530,7 @@ img {
         font-size: 25px;
     }
 
-    .search__button {
+    .search__btn {
         width: 100px;
         font-size: 25px;
     }
