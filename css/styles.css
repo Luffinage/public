@@ -1,0 +1,17 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.nav a {
+  padding: 10px;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+.nav a:hover {
+  color: #f5a800;
+  padding: 8px;
+  background: #000;
+  border: 2px solid #fdf2b4;
+  border-radius: 10px;
+}
