@@ -44,7 +44,7 @@ a {
 }
 
 .container {
-    width: 1900px;
+    width: 1800px;
     margin: auto;
 }
 
@@ -69,6 +69,8 @@ a {
     }
 
     &__logo {
+        min-width: 50px;
+
         width: 50px;
     }
 
@@ -88,10 +90,33 @@ a {
 .nav {
     display: flex;
 
+    &__list {
+        display: flex;
+    }
+
+    &__hamburger {
+        position: relative;
+
+    }
+
+    &__hamburger img {
+        display: none;
+        width: 50px;
+        height: 50px;
+        border: none;
+
+    }
+
+    &__sublist {
+        display: flex;
+
+    }
+
     a {
         padding: 10px 20px;
         transition: 0s;
         font-size: 18px;
+        white-space: nowrap;
 
         &:hover {
             color: #f5a800;
@@ -110,14 +135,19 @@ a {
 }
 
 .main {
+
     flex: 1 1 auto;
 
-    &__row-1 {
+    &__row_1 {
         margin: 100px 0;
     }
 
     &__column {
         margin: auto;
+    }
+
+    &__item {
+        margin: 100px auto;
     }
 
     &__wrapper-2 {
@@ -126,7 +156,8 @@ a {
         border-bottom: 5px solid #fdf2b4;
     }
 
-    &__row-2 {
+    &__row_2 {
+        text-align: center;
         padding: 50px;
     }
 
@@ -142,7 +173,7 @@ a {
         border-bottom: 5px solid #fdf2b4;
     }
 
-    &__row-3 {
+    &__row_3 {
         padding: 100px 0;
 
         .phone {
@@ -184,7 +215,7 @@ a {
     flex-direction: column;
     width: 400px;
     padding: 20px;
-    margin: 100px auto;
+
     background-color: #fdf2b4;
     border: 5px solid #492b00;
     border-radius: 60px;
@@ -419,7 +450,7 @@ a {
     }
 
     &__body {
-        
+
         font-size: 16px;
         line-height: 40px;
     }
@@ -451,8 +482,134 @@ a {
             background: url(https://luffinage.tk/img/ifavicon_16x16.png) no-repeat;
 
             &:hover {
-                color: #f5a800;
+                color: #f5a70000;
             }
         }
     }
+}
+
+@media (max-width:1800px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width:1200px) {
+    .nav {
+        &__hamburger {
+            &:hover {
+                .nav__sublist {
+                    display: block;
+                }
+            }
+        }
+
+        &__hamburger img {
+            display: block;
+            cursor: pointer;
+        }
+
+        &__sublist {
+            display: none;
+            position: absolute;
+            top: -30px;
+            right: -10px;
+            padding: 50px 20px;
+            border-bottom-left-radius: 10px;
+            border-left: 4px solid #2d1100;
+            border-bottom: 4px solid #2d1100;
+            background: #fdf2b4;
+
+            a {
+                color: #2d1100;
+            }
+
+        }
+
+        &__link {
+            margin: 0 0 20px 0;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .main {
+        &__column {
+            order: 2;
+            width: 100%;
+        }
+
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    .item {
+        width: 100%;
+        border-radius: 0;
+        border-left: none;
+        border-right: none;
+
+        &__title {
+            line-height: 80px;
+        }
+    }
+
+}
+
+@media (max-width:767px) {
+    .header {
+        &__row {
+            justify-content: start;
+            gap: 20px;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__nav {
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width:520px) {
+    .main {
+        &__row_1 {
+            margin-top: 0;
+        }
+
+        &__title {
+            line-height: 30px;
+            font-size: 20px;
+        }
+
+        &__item {
+            margin: 0 0;
+        }
+    }
+
+    .phone {
+        position: relative;
+        scale: 0.5;
+        margin: -110px;
+    }
+
+    .content {
+        padding: 20px;
+
+        &__title {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        &__body {
+            line-height: 25px;
+            font-size: 14px;
+        }
+    }
+
 }
