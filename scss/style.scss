@@ -268,6 +268,92 @@ a {
     box-shadow: 3px 3px 5px aqua, 3px 3px 5px #7300ef;
 }
 
+.message {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    z-index: 1;
+
+    &:hover .message__body {
+        background: #00b6ff;
+        color: #fff;
+        clip-path: circle(100%);
+        box-shadow: 0px 0px 50px aqua, 0px 0px 50px #7300ef;
+    }
+
+    &:hover span {
+        color: #00b6ff;
+        transition: 0.1s;
+    }
+
+    span {
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 16px;
+        color: #7300ef;
+
+        transition: 5s;
+    }
+
+    &__body {
+        padding: 10px 40px 10px 10px;
+        border-radius: 5px;
+        background: #00ffff;
+        color: #00ffff;
+
+        clip-path: circle(10% at 90% 50%);
+        transition: 1s;
+    }
+}
+
+.message-2 {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transition: 1s;
+    z-index: 1;
+
+    span {
+        position: absolute;
+        left: 13px;
+        bottom: 2px;
+        color: #7300ef;
+        transition: 0.3s;
+    }
+
+    &:hover .message-2__body {
+        width: 100px;
+        height: 100px;
+        border-radius: 30%;
+        color: #fff;
+        box-shadow: 0px 0px 70px aqua, 0px 0px 70px #7300ef;
+        transition: all 0.5s, color 1s;
+    }
+
+    &:hover span {
+        color: #00ffff00;
+    }
+
+    &__body {
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding-top: 30px;
+        border-radius: 50%;
+        background: #00b6ff;
+        color: #00b7ff00;
+        clip-path: circle(100%);
+        box-shadow: 0px 0px 20px aqua, 0px 0px 40px #7300ef;
+        transition: all 1s, color 0.3s;
+        cursor: pointer;
+
+    }
+}
+
+
+
 .container {
     width: 90%;
     min-width: 250px;
@@ -282,6 +368,10 @@ a {
     border: 2px solid rgb(46, 151, 171);
     border-radius: 10px;
     box-shadow: inset 0px 0px 20px aqua, 0px 0px 50px aqua;
+
+    a {
+        font-weight: bold;
+    }
 
     &__title {
         padding: 20px;
@@ -308,6 +398,7 @@ a {
     &__body {
         text-align: center;
         vertical-align: middle;
+
     }
 
     &__content {
@@ -354,7 +445,7 @@ a {
         overflow: hidden;
         text-align: center;
         border-radius: 10px;
-        background-color: paleturquoise;
+        background-color: rgba(175, 238, 238, 0.492);
         transition: 0.3s;
     }
 
