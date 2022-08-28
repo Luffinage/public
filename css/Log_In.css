@@ -16,7 +16,6 @@ body {
   height: 400px;
   width: 100%;
 }
-
 .log-form__input {
   position: relative;
   padding: 3px;
@@ -27,7 +26,6 @@ body {
   color: #7300ef;
   outline-color: #7300ef;
 }
-
 .log-form__btn {
   padding: 3px 10px;
   margin: 0 15px;
@@ -38,12 +36,11 @@ body {
   color: #fff;
   cursor: pointer;
   -webkit-box-shadow: 3px 3px 5px #7300ef;
-  box-shadow: 3px 3px 5px #7300ef;
+          box-shadow: 3px 3px 5px #7300ef;
 }
-
 .log-form__btn:hover {
   opacity: 0.9;
   font-size: 16px;
   -webkit-box-shadow: 3px 3px 5px #ff00ff;
-  box-shadow: 3px 3px 5px #ff00ff;
+          box-shadow: 3px 3px 5px #ff00ff;
 }
