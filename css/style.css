@@ -399,7 +399,7 @@ a:active {
   right: 20px;
   z-index: 1;
 }
-.message:hover .message__body {
+.message .message__body:hover {
   background: #00b6ff;
   color: #fff;
   -webkit-clip-path: circle(100%);
@@ -764,6 +764,7 @@ a:active {
 }
 .footer__item img {
   width: 16px;
+  margin: 6px 0 0 0;
 }
 .footer .fire-gif {
   margin-top: -82px;
@@ -1129,11 +1130,4 @@ a:active {
   .fire-gif {
     display: none;
   }
-}
-.visability-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
 }

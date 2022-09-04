@@ -274,7 +274,7 @@ a {
 
     z-index: 1;
 
-    &:hover .message__body {
+    .message__body:hover {
         background: #00b6ff;
         color: #fff;
         clip-path: circle(100%);
@@ -602,6 +602,7 @@ a {
         background-color: rgba(175, 238, 238, 0.492);
         transition: 0.3s;
         overflow: hidden;
+
         li {
             font-size: 20px;
             line-height: 40px;
@@ -657,6 +658,7 @@ a {
 
         img {
             width: 16px;
+            margin: 6px 0 0 0;
         }
     }
 
@@ -1009,13 +1011,3 @@ a {
         display: none;
     }
 }
-
-.visability-hidden {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-}
-
-.div {}

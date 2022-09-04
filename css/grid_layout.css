@@ -615,29 +615,56 @@ body > *:nth-child(77) {
 }
 
 .sidebar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 20px;
-  background: #dbdbdb;
+  background: rgba(255, 255, 255, 0.67);
 }
-.sidnav {
-  margin: 0 auto;
+.spoiler {
+  margin-bottom: 20px;
 }
-.sidnav a {
+.spoiler__checkbox {
+  display: none;
+}
+.spoiler__checkbox:checked ~ .spoiler__title::after {
+  -webkit-transform: rotate(180deg) translateY(10px);
+          transform: rotate(180deg) translateY(10px);
+}
+.spoiler__checkbox:checked ~ .spoiler__list {
+  background: rgba(106, 183, 224, 0.6941176471);
+  padding: 10px 0 10px 20px;
+  height: 170px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 2px;
+}
+.spoiler__title {
+  position: relative;
+  cursor: pointer;
+  font-weight: bold;
   font-size: 30px;
-  color: #fff;
 }
-.sidnav__list {
-  padding: 20px;
-  background: #5eb7e7;
+.spoiler__title::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  right: -25px;
+  border: 8px solid #000;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-.sidnav__link {
-  margin: 0 0 5px 0;
+.spoiler__list {
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-.sidnav__sublist {
-  margin: 0 0 20px 0;
+.spoiler a:hover {
+  text-decoration: underline;
+  color: #d56b52;
 }
+
 .title {
   text-align: center;
   font-size: 50px;
@@ -1070,8 +1097,17 @@ body > *:nth-child(77) {
   -ms-grid-column: 17;
 }
 .galery__img {
-  background: #efec48;
+  background: #d56b52;
   border: 5px solid #fff;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.galery__img:hover {
+  border-color: #efec48;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 0 10px #efec48;
+          box-shadow: 0 0 10px #efec48;
 }
 .galery__img-1 {
   -ms-grid-column: col1;
@@ -1608,6 +1644,17 @@ body > *:nth-child(77) {
   border: 3px solid;
   border-radius: 4px;
   background: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.market__item:hover {
+  background: #e9f3f8;
+  border: 3px solid #fff;
+  -webkit-box-shadow: 0 0 20px #000;
+          box-shadow: 0 0 20px #000;
+}
+.market__item:hover img {
+  border-bottom: 2px solid #fff;
 }
 .market__img img {
   background: rgba(0, 0, 0, 0.8823529412);
