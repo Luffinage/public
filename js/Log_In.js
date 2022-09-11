@@ -3,13 +3,13 @@ confirm('Do you have 18 years?')
 
 console.log('Hello, World!')
 
-const resault = prompt('How many years you have?')
-console.log('Your age: ' + resault)
+const result = prompt('How many years you have?')
+console.log('Your age: ' + result)
 
-if (resault >= 18) {
-    alert('You have ' + resault + ' years. Wellcome!')
-} else if (resault < 18) {
-    alert('You have ' + resault + ' years. You cant use this site!')
+if (result >= 18) {
+    alert('You have ' + result + ' years. Wellcome!')
+} else if (result < 18) {
+    alert('You have ' + result + ' years. You cant use this site!')
     window.open("index.html", "_self");
 }
 

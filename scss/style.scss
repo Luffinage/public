@@ -59,6 +59,65 @@ a {
     color: aquamarine;
 }
 
+.random {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 100px;
+    width: 400px;
+    margin: 100px auto;
+    border: 3px solid #000;
+
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.38);
+    padding: 20px;
+    gap: 20px;
+
+
+    &__title {
+        font-size: 30px;
+        margin: 0 0 20px 0;
+    }
+
+    &__min {
+    }
+
+    &__min-input {
+        background: rgba(0, 0, 0, 0.776);
+        color: #fff;
+        padding: 0 0 0 10px;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+
+    }
+
+    &__max {}
+
+    &__max-input {
+        background: rgba(0, 0, 0, 0.776);
+        color: #fff;
+        padding: 0 0 0 10px;
+        border: 3px solid #fff;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    &__btn {
+        margin: 20px 0 10px 0;
+        padding: 0 10px;
+        border-radius: 10px;
+        border: 3px solid rgb(106, 103, 103);
+        cursor: pointer;
+    }
+
+    &__title-result {}
+
+    &__result {
+        font-size: 40px;
+    }
+}
+
 .menu {
     position: fixed;
     height: 80px;
@@ -108,37 +167,41 @@ a {
 }
 
 .search {
-    img {
-        width: 25px;
-        background-color: rgb(46, 151, 171);
-        border-radius: 50%;
-        box-shadow: 3px 3px 5px aqua, 3px 3px 5px #7300ef;
-    }
+
+    margin: -5px;
+
 
     &__form {
+        position: relative;
+        align-items: center;
         display: flex;
         width: 21px;
-        transition: 0.2s;
+        transition: 0.3s;
 
         &:hover {
+            width: 200px;
+            border-radius: 20px;
+            background-color: rgb(46, 151, 171);
+            box-shadow: 3px 3px 5px aqua,
+                3px 3px 5px #7300ef;
+            justify-content: space-between;
+            transition: 0.3s;
+            // margin: 0 -5px 0 0;
+
+
             .search__input {
-                display: block;
-                position: static;
-                width: 100%;
+                // display: block;
+                // position: static;
+                width: 175px;
                 padding-left: 10px;
                 border-radius: 5px;
                 font-style: italic;
                 color: yellow;
                 outline-color: aquamarine;
+                height: auto;
+                margin: 0 auto 0 25px;
             }
 
-            width: 200px;
-            border-radius: 20px;
-            background-color: rgb(46, 151, 171);
-            box-shadow: 3px 3px 5px aqua,
-            3px 3px 5px #7300ef;
-            justify-content: space-between;
-            transition: 0.3s;
 
             img {
                 background: none;
@@ -148,11 +211,24 @@ a {
     }
 
     &__input {
-        display: none;
         position: absolute;
         background-color: transparent;
         width: 0;
+        transition: 0.3s;
+        height: 25px;
     }
+
+    &__img {
+
+        img {
+            width: 25px;
+            background-color: rgb(46, 151, 171);
+            border-radius: 50%;
+            box-shadow: 3px 3px 5px aqua, 3px 3px 5px #7300ef;
+        }
+    }
+
+
 }
 
 .nav {
@@ -290,9 +366,9 @@ a {
         cursor: pointer;
         position: absolute;
         top: 10px;
-        right: 16px;
+        right: 17px;
         color: #7300ef;
-
+        font-weight: bolder;
         transition: 5s;
     }
 

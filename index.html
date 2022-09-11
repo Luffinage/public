@@ -35,7 +35,8 @@
                 <li class="menu__list-search search">
                     <form class="search__form" action="https://google.com/search" target="_blank">
                         <input type="search" name="text" class="search__input" id="text-search"><label
-                            for="text-search"> <img src="img/icons/icon_search_32x32.png" alt="#"></label>
+                            class="search__img" for="text-search"> <img src="img/icons/icon_search_32x32.png"
+                                alt="#"></label>
 
                     </form>
                 </li>
@@ -48,16 +49,16 @@
                                 <!-- <li class="nav__sub-link"><a class="btn-2" href="#">Menu Sub-link</a>
                                     <ul class="nav__ssub-nav">
                                         <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
-                                        <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
-                                        <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav__sub-link"><a class="btn-2" href="#">Menu Sub-link</a>
-                                    <ul class="nav__ssub-nav">
-                                        <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
-                                        <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
-                                        <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
-                                    </ul> -->
+                                        <!-- <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li> -->
+                                <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav__sub-link"><a class="btn-2" href="#">Menu Sub-link</a>
+                            <ul class="nav__ssub-nav">
+                                <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
+                                <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
+                                <li class="nav__ssub-link"><a class="btn-3" href="#">Menu SSub-link</a></li>
+                            </ul> -->
                         </li>
                         <li class="nav__sub-link"><a class="btn-2" href="#">Position Properties</a>
                             <ul class="nav__ssub-nav">
@@ -162,7 +163,6 @@
             </ul>
         </nav>
     </header>
-
     <div class="comet">
         <img src="img/Comet.png" alt="comet">
     </div>
@@ -207,6 +207,18 @@
                     </div>
                 </div>
             </div>
+            <div class="random">
+                <span class="random__title">Generate random number</span>
+                <span class="random__min"> Min: <input type="number" class="random__min-input"
+                        id="random__min-input-id">
+                    <label for="random__min-input-id"></label> </span>
+                <span class="random__max">Max: <input type="number" class="random__max-input" id="random__max-input-id">
+                    <label for="random__max-input-id"></label> </span>
+                <input type="button" class="random__btn" id="random__btn-id" value="Generate">
+                <label class="random__title-result" for="random__input">Result:</label>
+                <span class="random__result text-rainbow"></span>
+            </div>
+
             <div class="spoiler">
                 <input class="spoiler__checkbox" id="checkbox-switch-1" type="checkbox" />
                 <label class="spoiler__title" for="checkbox-switch-1">
