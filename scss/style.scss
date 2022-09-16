@@ -64,7 +64,7 @@ a {
     flex-direction: column;
     align-items: center;
     top: 100px;
-    width: 400px;
+    max-width: 400px;
     margin: 100px auto;
     border: 3px solid #000;
 
@@ -79,8 +79,7 @@ a {
         margin: 0 0 20px 0;
     }
 
-    &__min {
-    }
+    &__min {}
 
     &__min-input {
         background: rgba(0, 0, 0, 0.776);

@@ -216,7 +216,7 @@ a:active {
       -ms-flex-align: center;
           align-items: center;
   top: 100px;
-  width: 400px;
+  max-width: 400px;
   margin: 100px auto;
   border: 3px solid #000;
   border-radius: 40px;

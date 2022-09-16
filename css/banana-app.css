@@ -641,7 +641,7 @@ a {
   background: url(https://luffinage.tk/img/ifavicon_16x16.png) no-repeat;
 }
 .footer__text a:hover {
-  color: rgba(245, 167, 0, 0);
+  color: #f5a800;
 }
 
 @media (max-width: 1800px) {
