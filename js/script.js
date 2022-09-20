@@ -1,9 +1,33 @@
+// document.getElementsByTagName('title')[0].innerHTML = 'bar';
+// window.history.pushState({}, 'bar', '/bar');
+window.history.replaceState({
+    foo: 'bar'
+}, 'Luffinage', '');
+
+window.onpopstate = function (e) {
+    if (typeof e.state == "object" && e.state.foo == "bar") {
+        alert("Blah blah blah");
+    }
+};
+
+window.history.go(-1);
+
+// console.log(location.href);
+// // prints the current URL
+
+// location.href = 'index.html';
+// // redirects the user to https://code.tutsplus.com
+
+// window.location.href = 'https://luffinage.tk';
+// history.pushState({}, null, newUrl);
+
+
 function randomResult() {
     const minRandom = document.getElementById("random__min-input-id").value;
     const maxRandom = document.getElementById("random__max-input-id").value;
 
-    console.log(typeof ("min: ", minRandom));
-    console.log('max: ', maxRandom);
+    // console.log(typeof ("min: ", minRandom));
+    // console.log('max: ', maxRandom);
 
     // if (length(minRandom) <= 0) {
     //     alert(`Please, enter a number in placeholder "Min"!`);
@@ -16,10 +40,10 @@ function randomResult() {
     //     console.warn('Pashel Na huy');
 
     // } else
-     if (minRandom >= maxRandom) {
+    if (minRandom >= maxRandom) {
         alert(`Minimal number \(${(minRandom)}\) cannot be more than maximum number \(${maxRandom}\)`);
         location.reload();
-        console.warn('Pashel Na huy');
+        console.warn('No-no-no');
 
     } else {
         console.log("min: ", minRandom);
@@ -29,12 +53,12 @@ function randomResult() {
         const returnRandom = (min, max) => {
             const maxRandomReturn = Math.round(Math.random() * max);
 
-            console.log("returmRandom");
 
             return maxRandomReturn >= min ? maxRandomReturn : returnRandom(min, max);
         }
         // console.log(Math.round);
         const result = returnRandom(minRandom, maxRandom);
+        console.log(`You get ${result}!`);
 
         document.querySelector('.random__result').innerHTML = result;
     }

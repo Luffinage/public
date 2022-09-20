@@ -489,18 +489,25 @@ body {
     }
 
     &__item {
-
         text-align: center;
+        padding: 10px;
 
+        img {
+            width: 20px;
 
-        img {}
+        }
 
         a {
             padding: 0 0 0 5px;
-            line-height: 17px;
-            letter-spacing: 3px;
-            color: #a0cce4;
+            line-height: 22px;
+            letter-spacing: 5px;
+            font-weight: bold;
+            color: #fff;
+            text-shadow: 2px 2px #000;
 
+            &:hover {
+                text-shadow: none;
+            }
         }
     }
 }

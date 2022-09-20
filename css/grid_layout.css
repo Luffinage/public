@@ -2076,12 +2076,21 @@ body > *:nth-child(96) {
 }
 .footer__item {
   text-align: center;
+  padding: 10px;
+}
+.footer__item img {
+  width: 20px;
 }
 .footer__item a {
   padding: 0 0 0 5px;
-  line-height: 17px;
-  letter-spacing: 3px;
-  color: #a0cce4;
+  line-height: 22px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px #000;
+}
+.footer__item a:hover {
+  text-shadow: none;
 }
 
 @media (max-width: 1600px) {
