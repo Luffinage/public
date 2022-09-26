@@ -14,7 +14,7 @@
     <meta content='true' name='HandheldFriendly'>
     <meta content='width' name='MobileOptimized'>
     <meta content='yes' name='apple-mobile-web-app-capable'>
-    <link href="https://fonts.googleapis.com/css?family=Coming+Soon:regular" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Coming+Soon:regular" rel="stylesheet" /> -->
     <link rel="icon" href="img/icons/favicon_16x16.png" type="image/png" sizes="16x16">
     <link rel="icon" href="img/icons/favicon_32x32.png" type="image/png" sizes="32x32">
     <link rel="icon" href="img/icons/favicon_64x64.png" type="image/png" sizes="64x64">
@@ -23,11 +23,12 @@
 </head>
 
 <body oncontextmenu="return false;">
+    <!--  Disable RMB-menu : none-->
 
     <header>
         <nav class="menu">
             <div class="menu__logo">
-                <a href="index.html"><img class="menu__icon-1" src="img/logo_400x80.png" alt="Luffinage.tk"><img
+                <a href="index.html"><img class="menu__icon-1" src="img/logo_400x80.webp" alt="Luffinage.tk"><img
                         class="menu__icon-2" src="img/icons/favicon_64x64.png" alt="#"></a>
             </div>
 
@@ -72,6 +73,7 @@
                                                 href="https://www.w3schools.com/css/css_positioning.asp"
                                                 target="_blank">From
                                                 W3S</a></li>
+
                                     </ul>
                                 </li>
                             </ul>
@@ -171,12 +173,12 @@
         </nav>
     </header>
     <div class="comet">
-        <img src="img/Comet.png" alt="comet">
+        <img src="img/Comet.webp" alt="comet">
     </div>
     <aside class="message">
         <div class="message__body">
             <p>Are you welcome!</p>
-            <span>!</span>
+            <span></span>
         </div>
     </aside>
 
@@ -194,7 +196,7 @@
     <main class="main">
         <div class="container">
             <div class="main__header">
-                <div class="main__image"><img src="img/html_js_css.png" alt="#"></div>
+                <div class="main__image"><img src="img/html_js_css.webp" alt="#"></div>
                 <div class="main__body">
                     <div class="main__title title">
                         <h1><img src="/img/icons/icon_rocket.svg" alt="#"> Welcome! <img
@@ -202,12 +204,12 @@
                     </div>
                     <div class="main__text">
                         <p>This site is developed and <em>continues to be developed</em> in web layout languages:
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">HTML5</a>,
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">CSS3</a> and
-                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><b>Java
-                                    Script</b></a>. In addition, he was connected to <em>free</em> hosting <a
-                                href="https://firebase.google.com/" target="_blank"><span
-                                    class="text-rainbow">Firebase</span></a>.
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" title="HTML5">HTML</a>,
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" title="CSS3">CSS</a> and
+                            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" title="Java Script">Java
+                                    Script</a>. In addition, he was connected to <em>free</em> hosting <a
+                                class="text-rainbow" title="Firebase" href="https://firebase.google.com/"
+                                target="_blank">Firebase</a>.
                         </p>
                         <p>In the process of training, I used publicly available and free information from the Internet.
                         </p>
@@ -215,7 +217,7 @@
                 </div>
             </div>
             <div class="random">
-                <span class="random__title">Get random number</span>
+                <span class="random__title"><h4>Get random number</h4></span>
                 <span class="random__min"> Min: <input type="number" class="random__min-input" id="random__min-input-id"
                         value="1">
                     <label for="random__min-input-id"></label> </span>
@@ -228,9 +230,9 @@
             </div>
 
             <div class="spoiler">
-                <input class="spoiler__checkbox" id="checkbox-switch-1" type="checkbox" />
+                <input class="spoiler__checkbox" id="checkbox-switch-1" type="checkbox" checked/>
                 <label class="spoiler__title" for="checkbox-switch-1">
-                    <h2>My Favorite Sources:</h2>
+                    <h3>My Favorite Sources:</h3>
                 </label>
                 <div class="spoiler__content">
                     <ul>
@@ -262,27 +264,20 @@
             <div class="spoiler">
                 <input class="spoiler__checkbox" id="checkbox-switch-2" type="checkbox" />
                 <label class="spoiler__title" for="checkbox-switch-2">
-                    <h2>Evolution</h2>
+                    <h3>Lorem</h3>
                 </label>
                 <div class="spoiler__content">
-                    <p>Evolution is change in the heritable characteristics of biological populations over successive
-                        generations. These characteristics are the expressions of genes that are passed on from parent
-                        to offspring during reproduction. Different characteristics tend to exist within any given
-                        population as a result of mutation, genetic recombination and other sources of genetic
-                        variation. Evolution occurs when evolutionary processes such as natural selection (including
-                        sexual selection) and genetic drift act on this variation, resulting in certain characteristics
-                        becoming more common or rare within a population. The evolutionary pressures that determine
-                        whether a characteristic would be common or rare within a population constantly change,
-                        resulting in a change in heritable characteristics arising over successive generations. It is
-                        this process of evolution that has given rise to biodiversity at every level of biological
-                        organisation, including the levels of species, individual organisms and molecules.</p>
-                    <p>Source: <a href="https://en.wikipedia.org/wiki/Evolution" target="_blank">Wiki</a></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit hic, saepe cupiditate dolorem et, enim reiciendis, quae dignissimos numquam deleniti. Porro adipisci modi fuga nisi rerum vitae similique expedita?
+                    Cupiditate molestias placeat, labore culpa consequatur eum laborum mollitia, architecto quaerat tempora sequi enim! Molestiae consequatur soluta obcaecati, eos, perspiciatis quisquam praesentium neque reprehenderit dolore asperiores est hic reiciendis nam.
+                    Autem est ducimus cum maxime aliquam mollitia atque, quidem cumque voluptatibus odit vero repellat suscipit minus, cupiditate in quod! Obcaecati similique atque reprehenderit quae voluptatibus ipsum soluta officia quidem vel!
+                    Enim vero error blanditiis commodi voluptas voluptatem dolores, temporibus neque, ea pariatur repellendus laboriosam, reprehenderit dolore! Explicabo praesentium fugiat provident nihil odio consequatur, delectus saepe voluptates dicta facilis autem itaque.
+                    Sapiente dolore repellat qui soluta nihil! Cupiditate laboriosam facilis quis dolore cum praesentium id minus asperiores facere fugit a impedit molestiae laudantium libero, inventore ad eum. Tempore, nisi? Nesciunt, porro.</p>
                 </div>
             </div>
             <div class="spoiler">
                 <input class="spoiler__checkbox" id="checkbox-switch-3" type="checkbox" />
                 <label class="spoiler__body" for="checkbox-switch-3"><span class="spoiler__title">
-                        <h2>Evolution</h2>
+                        <h3>Evolution</h3>
                     </span></label>
                 <div class="spoiler__content">
                     <p>Evolution is change in the heritable characteristics of biological populations over successive
@@ -305,7 +300,7 @@
         <div class="container">
             <nav>
                 <section class="aside__item">
-                    <ul> For reading:
+                    <ul> <h5>For reading:</h5>
                         <li><a href="https://developer.mozilla.org/ru/" target="_blank">MDN</a></li>
                         <li><a href="https://htmlbook.ru/" target="_blank">HTML Book</a></li>
                         <li><a href="https://html5book.ru/" target="_blank">HTML 5 Book</a></li>
@@ -316,14 +311,15 @@
                     </ul>
                 </section>
                 <section class="aside__item">
-                    <ul>For checked:
+                    <ul><h5>For checked:</h5>
+                        <li><a href="https://pagespeed.web.dev/"></a>Pagespeed</li>
                         <li><a href="https://validator.w3.org/#validate_by_upload+with_options" target="_blank">W3C</a>
                         </li>
                         <li><a href="https://caniuse.com/" target="_blank">CanIUse</a></li>
                     </ul>
                 </section>
                 <section class="aside__item">
-                    <ul> For creating:
+                    <ul> <h5>For creating:</h5>
                         <li><a href="https://codepen.io/" target="_blank">Codepen</a></li>
                         <li><a href="https://replit.com/languages/java10" target="_blank">Replit</a></li>
                         <li><a href="https://onecompiler.com/" target="_blank">OneCompiler</a></li>
@@ -338,7 +334,7 @@
             <img src="gif/blueFire.gif" alt="#">
         </div>
         <address class="footer__item">
-            <ul class="footer__list">Contact Information:
+            <ul class="footer__list"><h6>Contact Information:</h6>
                 <li class="footer__link"><a href="https://github.com/Luffinage/" target="_blank"><img
                             src="https://github.githubassets.com/favicons/favicon.png" alt="#">
                         GitHub</a></li>

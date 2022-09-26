@@ -1,16 +1,21 @@
 // document.getElementsByTagName('title')[0].innerHTML = 'bar';
 // window.history.pushState({}, 'bar', '/bar');
-window.history.replaceState({
-    foo: 'bar'
-}, 'Luffinage', '');
 
-window.onpopstate = function (e) {
-    if (typeof e.state == "object" && e.state.foo == "bar") {
-        alert("Blah blah blah");
-    }
-};
 
-window.history.go(-1);
+
+// window.history.replaceState({
+//     foo: 'bar'
+// }, 'Luffinage', '');
+
+// window.onpopstate = function (e) {
+//     if (typeof e.state == "object" && e.state.foo == "bar") {
+//         alert("Blah blah blah");
+//     }
+// };
+
+
+
+// window.history.go(-1);
 
 // console.log(location.href);
 // // prints the current URL
